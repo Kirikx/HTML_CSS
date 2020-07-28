@@ -1,35 +1,151 @@
 body {
     background: #f8f8f8;
 }
-.title {
+
+h2 {
+    Color: black; /* Цвет текста – черный*/
+    font-size: 18px; /* Размер шрифта – 18px;*/
+    font-weight: 400; /* Насыщенность шрифта – 400 (font-weight) */
+    background: #eaeaea; /** Цвет фона – #eaeaea.*/
+}
+
+h3 {
+    Color: black; /* Цвет текста – черный*/
+    font-size: 15px; /* Размер шрифта – 15px;*/
+    font-weight: 400; /* Насыщенность шрифта – 400 (font-weight) */
+    background: #eaeaea; /** Цвет фона – #eaeaea.*/
+}
+
+form label input, textarea {
+    font-family: Serif, serif;
+    font-size: 10px;
+    font-style: italic;
+    color: darkblue;
+}
+
+form label input {
+    width: 200px;
+    height: 12px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    text-transform: capitalize;
+}
+
+table {
+    border: solid;
+}
+
+.header {
     color: green;
     font-family: Saab, serif;
-    font-size: 18px;
-    text-align: center;
-
+    font-size: 10px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
+
+.vitrina {
+    height: auto;
+    width: 200px;
+}
+
+.product {
+    width: 450px;
+    height: 300px;
+}
+
+.img_border {
+    border: 1px solid darkgreen;
+}
+
+.logo {
+    height: auto;
+    width: 100px;
+    border: none;
+}
+
 .menu {
     display: flex;
-    align-items: center;
-    height: 100%;
-    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.menu_list  {
-    margin-right: 20px;
-    height: 100%;
-    text-decoration: none;
+
+.menu_list {
+    margin-right: 2px; /* Отступ слева */
+    border: 1px solid grey; /* Рамка вокруг текста */
+    padding: 1px; /* Поля вокруг текста */
+    background: #f5f4f2; /* Цвет фона */
 }
+
 .menu_link_style {
-    color: #464646;
-    font-family: Arial,sans-serif;
-    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    font-size: 15px; /* Размер шрифта */
+    text-decoration: none; /* Убираем подчеркивание */
+    display: block; /* Ссылка как блочный элемент */
+    height: 100%; /* Высота на весь слой */
+    color: green; /* Цвет ссылки */
+    transition: 200ms linear; /* Время изменения */
 }
-.text {
+
+.short_order {
+    Color: #707070; /** Цвет текста – #707070;*/;
+    font-size: 14px; /** Размер шрифта – 14px;*/
+    font-style: italic; /** Начертание шрифта – italic (font-style);*/
+    line-height: 16px; /** Высота текста – 16px (line-height).*/
+    text-align: justify; /* Распределение текста по ширине */
+}
+
+.properties_list {
+    list-style: none;
+}
+
+.properties_list li {
+    margin-top: 5px;
+    padding: 0px 0px 0px 25px;
+    background: url("img/f_hot_new.gif") no-repeat;
 
 }
+
+.properties_text {
+    Color: #707070; /** Цвет текста – #484343;*/
+    font-size: 12px; /** Размер шрифта – 16px;*/
+    font-weight: 300; /** Насыщенность шрифта – 400 (font-weight);*/
+    line-height: 20px; /** Высота текста – 24px (line-height);*/
+    text-align: left; /** Расположение текста – по левому краю (text-align).*/
+}
+
+.full_order {
+    text-align: justify;
+    Color: #707070; /** Цвет текста – #484343;*/
+    font-size: 14px; /** Размер шрифта – 16px;*/
+    font-weight: 400; /** Насыщенность шрифта – 400 (font-weight);*/
+    line-height: 24px; /** Высота текста – 24px (line-height);*/
+}
+
 .inputUp {
     text-transform: capitalize;
 }
+
+p:first-letter {
+    color: maroon;
+}
+
+input[type=email]:focus {
+    background: yellow;
+}
+
+.img_border:hover {
+    border: none;
+    padding: 1px;
+}
+
+.menu_link_style:hover { /* Наведение */
+    color: darkblue; /* Цвет ссылки при наведении на нее курсора мыши */
+    background: #e3e2e2; /* Фон под ссылкой */
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+
