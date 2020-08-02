@@ -7,45 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">
-    <a href="index.html"><img src="img/logo.jpg" alt="Логотип" class="logo"></a>
-    <hr>
-    <ul class="menu">
-        <li class="menu_list"><a href="index.html" class="menu_link_style">Главная</a>
-        <li class="menu_list"><a href="catalog.html" class="menu_link_style">Каталог</a>
-        <li class="menu_list"><a href="contacts.html" class="menu_link_style">Контакты</a>
-    </ul>
-    <hr>
-</div>
-<h2>Напишите нам</h2>
-<form id="form" action="">
-    Имя <label>
-    <input type="text" placeholder="Женя" class="inputUp">
-</label><br>
-    Email <label>
-    <input type="email" placeholder="mail@mail.ru" class="email">
-</label><br>
-    Тема <label>
-    <input type="text" placeholder="Большое спасибо!">
-</label><br>
-    <p><b>Оставьте нам свой отзыв:</b></p>
-    <p><textarea name="comment" placeholder="Вы такие лапочки!" cols="60" rows="10"></textarea><input type="submit"
-                                                                                                      value=" Отправить "
-                                                                                                      form="form"></p>
-</form>
-<h2>Телефон и адреса</h2>
-<p>Контактный номер нашего магазина - 01 &#128222</p>
-<h3>Точки</h3>
-<ol>
-    <li><p>Пушкино, набережная 32/7, пом.777</p></li>
-    <li><p>Пушкино, набережная 32/6, пом.666</p></li>
-    <li><p>Пушкино, Заветы, у перехода</p></li>
-</ol>
-<script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af95ee374b2116926a8dad561c3d9f926e44659c7520e01e1471e2ed47b5cf86f&amp;width=399&amp;height=442&amp;lang=ru_RU&amp;scroll=true"></script>
-<div class="footer">
-    <hr>
-    <p>&copy; Все права защищены</p>
+<div class="container">
+    <div class="header">
+        <div class="logo_cont">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Логотип" class="logo">
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li class="menu_list"><a href="index.html" class="menu_link_style">Главная</a>
+            <li class="menu_list"><a href="catalog.html" class="menu_link_style">Каталог</a>
+            <li class="menu_list"><a href="contacts.html" class="menu_link_style">Контакты</a>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Напишите нам</h2>
+        <form id="form" action="">
+            Имя <label>
+            <input type="text" placeholder="Женя" class="inputUp">
+        </label><br>
+            Email <label>
+            <input type="email" placeholder="mail@mail.ru" class="email">
+        </label><br>
+            Тема <label>
+            <input type="text" placeholder="Большое спасибо!">
+        </label><br>
+            <p><b>Оставьте нам свой отзыв:</b></p>
+            <div class="text_send">
+                <textarea name="comment" placeholder="Вы такие лапочки!" cols="60" rows="10"></textarea><br>
+                <input type="submit" value=" Отправить " form="form">
+            </div>
+        </form>
+        <h2>Телефон и адреса</h2>
+        <p>Контактный номер нашего магазина - 01 &#128222</p>
+        <h3>Точки продаж</h3>
+        <ol class="points">
+            <li><p>Пушкино, набережная 32/7, пом.777</p></li>
+            <li><p>Пушкино, набережная 32/6, пом.666</p></li>
+            <li><p>Пушкино, Заветы, у перехода</p></li>
+        </ol>
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af95ee374b2116926a8dad561c3d9f926e44659c7520e01e1471e2ed47b5cf86f&amp;width=auto&amp;height=374&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="footer">
+        <p>&copy; Все права защищены</p>
+    </div>
 </div>
 </body>
 </html>
