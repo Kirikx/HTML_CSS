@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrAzbuka</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Интернет-магазинчик фруктов и овощей "Фруктовая азбука"</h1>
-    <hr>
-</header>
-<ul>
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог</a></li>
-    <li><a href="contacts.html">Контакты</a></li>
-</ul>
-<hr>
-<h2>Главная</h2>
-<p>
-    Приветствую вас, дорогие друзья!
-</p>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum exercitationem id itaque iusto laborum
-    laudantium minus necessitatibus, nobis nulla numquam odio quas reiciendis rem reprehenderit rerum sequi sit veniam.
-</p>
-<a href="https://yandex.ru">Ссылочка во вне на Яндекс</a>
-<footer>
-    <hr>
-    <p>&copy; Все права защищены</p>
-</footer>
+<div class="container">
+    <div class="header">
+        <div class="logo_cont">
+            <a href="index.html">
+                <img src="img/logo.jpg" alt="Логотип" class="logo">
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li class="menu_list"><a href="index.html" class="menu_link_style">Главная</a>
+            <li class="menu_list"><a href="catalog.html" class="menu_link_style">Каталог</a>
+            <li class="menu_list"><a href="contacts.html" class="menu_link_style">Контакты</a>
+        </ul>
+    </div>
+    <div class="content">
+        <h2>Главная</h2>
+        <p>
+            Приветствую вас, дорогие друзья!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum exercitationem id itaque iusto laborum
+            laudantium minus necessitatibus, nobis nulla numquam odio quas reiciendis rem reprehenderit rerum sequi sit
+            veniam.
+        </p>
+        <a href="https://yandex.ru">Не нашел у нас? Ищи на Яндекс!</a>
+    </div>
+    <div class="footer">
+        <p>&copy; Все права защищены</p>
+    </div>
+</div>
 </body>
 </html>
